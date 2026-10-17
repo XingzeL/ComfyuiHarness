@@ -1,0 +1,38 @@
+test_build_has_no_writes_and_does_not_mutate_template (test_harness.HarnessTests) ... ok
+test_cli_outputs_utf8_and_nonzero_for_invalid_task (test_harness.HarnessTests) ... ok
+test_collect_waits_for_success (test_harness.HarnessTests) ... ok
+test_corrupt_black_and_altered_files_are_not_verified (test_harness.HarnessTests) ... ok
+test_enum_path_uses_server_spelling (test_harness.HarnessTests) ... ok
+test_graph_rejects_ui_cycles_and_broken_links (test_harness.HarnessTests) ... ok
+test_history_cleared_after_collection_uses_snapshot (test_harness.HarnessTests) ... ok
+test_history_outputs_and_idempotent_collection (test_harness.HarnessTests) ... ok
+test_http_rejection_and_uncertain_submission_not_retried (test_harness.HarnessTests) ... ok
+test_image_is_snapshotted_uploaded_and_references_server_name (test_harness.HarnessTests) ... ok
+test_inspect_lists_models_without_submitting (test_harness.HarnessTests) ... ok
+test_lora_strengths_and_chain (test_harness.HarnessTests) ... ok
+test_missing_field_wrong_class_and_duplicate_mapping (test_harness.HarnessTests) ... ok
+test_missing_node_model_or_invalid_link_blocks_post (test_harness.HarnessTests) ... ok
+test_missing_output_is_not_verified (test_harness.HarnessTests) ... ok
+test_node_renumbering_works_with_mapping_update (test_harness.HarnessTests) ... ok
+test_package_can_move_and_cli_build_needs_no_service (test_harness.HarnessTests) ... ok
+test_parameter_ranges_types_and_random_seed_range (test_harness.HarnessTests) ... ok
+test_partial_multiple_outputs_are_not_verified (test_harness.HarnessTests) ... ok
+test_paths_and_server_output_traversal_are_rejected (test_harness.HarnessTests) ... ok
+test_queued_running_unknown_and_failed_statuses (test_harness.HarnessTests) ... ok
+test_resource_family_mismatch_is_rejected (test_harness.HarnessTests) ... ok
+test_seed_is_recorded_and_retry_is_new_run (test_harness.HarnessTests) ... ok
+test_service_unreachable_is_recorded (test_harness.HarnessTests) ... ok
+test_undeclared_output_and_special_save_need_adaptation (test_harness.HarnessTests) ... ok
+test_unknown_param_and_duplicate_resource_are_rejected (test_harness.HarnessTests) ... ok
+test_black_recent_output_blocks_submission (test_workflow_module.ModuleTests) ... ok
+test_dry_run_has_no_network_or_output_directory (test_workflow_module.ModuleTests) ... ok
+test_missing_custom_save_node_blocks_submission (test_workflow_module.ModuleTests) ... ok
+test_module_cli_works_after_copy_without_shared_runner (test_workflow_module.ModuleTests) ... ok
+test_server_rejection_and_unknown_do_not_auto_retry (test_workflow_module.ModuleTests) ... ok
+test_submit_returns_before_image_exists_and_plans_direct_output (test_workflow_module.ModuleTests) ... ok
+test_two_submissions_have_distinct_paths_and_keep_records (test_workflow_module.ModuleTests) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 18.008s
+
+OK

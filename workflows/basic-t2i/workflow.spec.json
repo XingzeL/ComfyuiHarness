@@ -1,0 +1,156 @@
+{
+  "id": "basic-t2i",
+  "family": "sdxl",
+  "template": "workflow.json",
+  "outputs": [
+    "7"
+  ],
+  "parameters": {
+    "checkpoint": {
+      "type": "string",
+      "resource_kind": "checkpoint",
+      "targets": [
+        {
+          "node": "1",
+          "class_type": "CheckpointLoaderSimple",
+          "input": "ckpt_name"
+        }
+      ]
+    },
+    "positive": {
+      "type": "string",
+      "targets": [
+        {
+          "node": "2",
+          "class_type": "CLIPTextEncode",
+          "input": "text"
+        }
+      ]
+    },
+    "negative": {
+      "type": "string",
+      "default": "",
+      "targets": [
+        {
+          "node": "3",
+          "class_type": "CLIPTextEncode",
+          "input": "text"
+        }
+      ]
+    },
+    "width": {
+      "type": "integer",
+      "default": 512,
+      "min": 64,
+      "max": 8192,
+      "targets": [
+        {
+          "node": "4",
+          "class_type": "EmptyLatentImage",
+          "input": "width"
+        }
+      ]
+    },
+    "height": {
+      "type": "integer",
+      "default": 512,
+      "min": 64,
+      "max": 8192,
+      "targets": [
+        {
+          "node": "4",
+          "class_type": "EmptyLatentImage",
+          "input": "height"
+        }
+      ]
+    },
+    "batch_size": {
+      "type": "integer",
+      "default": 1,
+      "min": 1,
+      "max": 16,
+      "targets": [
+        {
+          "node": "4",
+          "class_type": "EmptyLatentImage",
+          "input": "batch_size"
+        }
+      ]
+    },
+    "seed": {
+      "type": "integer",
+      "default": null,
+      "random_seed": true,
+      "min": 0,
+      "max": 9223372036854775807,
+      "targets": [
+        {
+          "node": "5",
+          "class_type": "KSampler",
+          "input": "seed"
+        }
+      ]
+    },
+    "steps": {
+      "type": "integer",
+      "default": 20,
+      "min": 1,
+      "max": 10000,
+      "targets": [
+        {
+          "node": "5",
+          "class_type": "KSampler",
+          "input": "steps"
+        }
+      ]
+    },
+    "cfg": {
+      "type": "number",
+      "default": 7,
+      "min": 0,
+      "max": 100,
+      "targets": [
+        {
+          "node": "5",
+          "class_type": "KSampler",
+          "input": "cfg"
+        }
+      ]
+    },
+    "sampler": {
+      "type": "string",
+      "default": "euler",
+      "targets": [
+        {
+          "node": "5",
+          "class_type": "KSampler",
+          "input": "sampler_name"
+        }
+      ]
+    },
+    "scheduler": {
+      "type": "string",
+      "default": "normal",
+      "targets": [
+        {
+          "node": "5",
+          "class_type": "KSampler",
+          "input": "scheduler"
+        }
+      ]
+    },
+    "denoise": {
+      "type": "number",
+      "default": 1,
+      "min": 0,
+      "max": 1,
+      "targets": [
+        {
+          "node": "5",
+          "class_type": "KSampler",
+          "input": "denoise"
+        }
+      ]
+    }
+  }
+}

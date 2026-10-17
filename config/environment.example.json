@@ -1,0 +1,19 @@
+{
+  "base_url": "http://127.0.0.1:8188",
+  "timeout_seconds": 30,
+  "limits": {
+    "max_image_pixels": null
+  },
+  "service_scripts": {
+    "start": "scripts/start_comfyui.py",
+    "stop": "scripts/stop_comfyui.py",
+    "restart": "scripts/restart_comfyui.py",
+    "status": "scripts/status_comfyui.py"
+  },
+  "local": {
+    "comfyui_root": null,
+    "models_root": null,
+    "python_executable": null,
+    "extra_model_paths": []
+  }
+}

@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+*.local.json
+config/environment.local.json
+resources/registry.local.json
+runs/
+outputs/
+inputs/
+tmp/
+workflows/**/output/
+templates/**/output/
+Grokbot/input/*
+Grokbot/output/*
+!Grokbot/input/.gitkeep
+!Grokbot/output/.gitkeep

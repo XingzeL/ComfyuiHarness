@@ -1,0 +1,9 @@
+{
+  "workflow": "basic-t2i",
+  "parameters": {
+    "checkpoint": "local-sdxl",
+    "positive": "a ceramic teapot on a wooden table, soft daylight",
+    "negative": "",
+    "seed": 42
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "workflow": "basic-t2i-lora",
+  "parameters": {
+    "checkpoint": "local-sdxl",
+    "lora": "local-style",
+    "positive": "a ceramic teapot on a wooden table, soft daylight",
+    "negative": "",
+    "seed": 42,
+    "lora_model_strength": 0.7,
+    "lora_clip_strength": 0.7
+  }
+}

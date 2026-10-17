@@ -1,0 +1,20 @@
+{
+  "resources": [
+    {
+      "id": "local-sdxl",
+      "kind": "checkpoint",
+      "family": "sdxl",
+      "filename": "__SELECT_LOCAL_CHECKPOINT__.safetensors",
+      "document": "resources/model.template.md",
+      "verification": "unverified"
+    },
+    {
+      "id": "local-style",
+      "kind": "lora",
+      "family": "sdxl",
+      "filename": "__SELECT_COMPATIBLE_LORA__.safetensors",
+      "document": "resources/lora.template.md",
+      "verification": "unverified"
+    }
+  ]
+}
